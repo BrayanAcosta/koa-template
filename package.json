@@ -1,0 +1,45 @@
+{
+  "name": "hexagonal-architecture",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.ts",
+  "type": "module",
+  "scripts": {
+    "start": "node dist/main.js",
+    "dev": "node --loader ts-node/esm --watch src/main.ts",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "validate-dependencies": "depcruise --config .dependency-cruiser.js src",
+    "lint": "npx eslint . --ext .js,.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.34.0",
+    "@types/dotenv": "^6.1.1",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/koa": "^3.0.0",
+    "@types/koa-bodyparser": "^4.3.12",
+    "@types/koa-router": "^7.4.8",
+    "@types/node": "^24.3.0",
+    "dependency-cruiser": "^17.0.1",
+    "eslint": "^9.34.0",
+    "globals": "^16.3.0",
+    "jiti": "^2.5.1",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.41.0"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "koa": "^3.0.1",
+    "koa-bodyparser": "^4.4.1",
+    "koa-parser": "^1.0.8",
+    "koa-router": "^14.0.0",
+    "pg": "^8.16.3",
+    "yup": "^1.7.0"
+  }
+}
